@@ -6,7 +6,7 @@
 # catalog-version 1.7b
 Name:		texlive-babel-greek
 Version:	1.7b
-Release:	3
+Release:	4
 Summary:	Babel support for documents written in Greek
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/greek
