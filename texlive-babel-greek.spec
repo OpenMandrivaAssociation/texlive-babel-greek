@@ -1,12 +1,12 @@
-# revision 31810
+# revision 32309
 # category Package
 # catalog-ctan /macros/latex/contrib/babel-contrib/greek
-# catalog-date 2013-10-01 18:30:38 +0200
+# catalog-date 2013-12-03 18:08:51 +0100
 # catalog-license lppl1.3
-# catalog-version 1.7b
+# catalog-version 1.8a
 Name:		texlive-babel-greek
-Version:	1.7b
-Release:	5
+Version:	1.8a
+Release:	1
 Summary:	Babel support for documents written in Greek
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/greek
@@ -42,19 +42,21 @@ classical-era symbols.
 %doc %{_texmfdistdir}/doc/generic/babel-greek/README
 %doc %{_texmfdistdir}/doc/generic/babel-greek/README.html
 %doc %{_texmfdistdir}/doc/generic/babel-greek/athnum.pdf
-%doc %{_texmfdistdir}/doc/generic/babel-greek/greek.pdf
+%doc %{_texmfdistdir}/doc/generic/babel-greek/babel-greek.pdf
 %doc %{_texmfdistdir}/doc/generic/babel-greek/grmath.pdf
 %doc %{_texmfdistdir}/doc/generic/babel-greek/grsymb.pdf
 %doc %{_texmfdistdir}/doc/generic/babel-greek/test-greek.pdf
 %doc %{_texmfdistdir}/doc/generic/babel-greek/test-greek.tex
 %doc %{_texmfdistdir}/doc/generic/babel-greek/test-unicode-greek.pdf
 %doc %{_texmfdistdir}/doc/generic/babel-greek/test-unicode-greek.tex
+%doc %{_texmfdistdir}/doc/generic/babel-greek/test-unicode-lgr.pdf
+%doc %{_texmfdistdir}/doc/generic/babel-greek/test-unicode-lgr.tex
 %doc %{_texmfdistdir}/doc/generic/babel-greek/usage.pdf
 %doc %{_texmfdistdir}/doc/generic/babel-greek/usage.tex
 #- source
 %doc %{_texmfdistdir}/source/generic/babel-greek/athnum.dtx
-%doc %{_texmfdistdir}/source/generic/babel-greek/greek.dtx
-%doc %{_texmfdistdir}/source/generic/babel-greek/greek.ins
+%doc %{_texmfdistdir}/source/generic/babel-greek/babel-greek.dtx
+%doc %{_texmfdistdir}/source/generic/babel-greek/babel-greek.ins
 %doc %{_texmfdistdir}/source/generic/babel-greek/grmath.dtx
 %doc %{_texmfdistdir}/source/generic/babel-greek/grsymb.dtx
 
