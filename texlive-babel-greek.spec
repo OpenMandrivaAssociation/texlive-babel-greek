@@ -6,7 +6,7 @@
 # catalog-version 1.8a
 Name:		texlive-babel-greek
 Version:	1.8a
-Release:	3
+Release:	4
 Summary:	Babel support for documents written in Greek
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/greek
