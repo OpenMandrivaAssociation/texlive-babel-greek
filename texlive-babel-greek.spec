@@ -1,12 +1,6 @@
-# revision 32309
-# category Package
-# catalog-ctan /macros/latex/contrib/babel-contrib/greek
-# catalog-date 2013-12-03 18:08:51 +0100
-# catalog-license lppl1.3
-# catalog-version 1.8a
 Name:		texlive-babel-greek
-Version:	1.8a
-Release:	5
+Version:	1.9g
+Release:	1
 Summary:	Babel support for documents written in Greek
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/greek
@@ -35,30 +29,10 @@ classical-era symbols.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/generic/babel-greek/athnum.sty
-%{_texmfdistdir}/tex/generic/babel-greek/greek.ldf
-%{_texmfdistdir}/tex/generic/babel-greek/grmath.sty
-%{_texmfdistdir}/tex/generic/babel-greek/grsymb.sty
-%doc %{_texmfdistdir}/doc/generic/babel-greek/README
-%doc %{_texmfdistdir}/doc/generic/babel-greek/README.html
-%doc %{_texmfdistdir}/doc/generic/babel-greek/athnum.pdf
-%doc %{_texmfdistdir}/doc/generic/babel-greek/babel-greek.pdf
-%doc %{_texmfdistdir}/doc/generic/babel-greek/grmath.pdf
-%doc %{_texmfdistdir}/doc/generic/babel-greek/grsymb.pdf
-%doc %{_texmfdistdir}/doc/generic/babel-greek/test-greek.pdf
-%doc %{_texmfdistdir}/doc/generic/babel-greek/test-greek.tex
-%doc %{_texmfdistdir}/doc/generic/babel-greek/test-unicode-greek.pdf
-%doc %{_texmfdistdir}/doc/generic/babel-greek/test-unicode-greek.tex
-%doc %{_texmfdistdir}/doc/generic/babel-greek/test-unicode-lgr.pdf
-%doc %{_texmfdistdir}/doc/generic/babel-greek/test-unicode-lgr.tex
-%doc %{_texmfdistdir}/doc/generic/babel-greek/usage.pdf
-%doc %{_texmfdistdir}/doc/generic/babel-greek/usage.tex
+%{_texmfdistdir}/tex/generic/babel-greek
+%doc %{_texmfdistdir}/doc/generic/babel-greek
 #- source
-%doc %{_texmfdistdir}/source/generic/babel-greek/athnum.dtx
-%doc %{_texmfdistdir}/source/generic/babel-greek/babel-greek.dtx
-%doc %{_texmfdistdir}/source/generic/babel-greek/babel-greek.ins
-%doc %{_texmfdistdir}/source/generic/babel-greek/grmath.dtx
-%doc %{_texmfdistdir}/source/generic/babel-greek/grsymb.dtx
+%doc %{_texmfdistdir}/source/generic/babel-greek
 
 #-----------------------------------------------------------------------
 %prep
