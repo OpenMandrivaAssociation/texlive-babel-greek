@@ -1,13 +1,13 @@
 Name:		texlive-babel-greek
-Version:	1.9g
-Release:	2
+Version:	56904
+Release:	1
 Summary:	Babel support for documents written in Greek
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/greek
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-greek.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-greek.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-greek.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-greek.r56904.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-greek.doc.r56904.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-greek.source.r56904.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -20,12 +20,12 @@ made for Greek function names in mathematics, and for
 classical-era symbols.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -36,7 +36,8 @@ classical-era symbols.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
