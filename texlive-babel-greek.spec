@@ -1,6 +1,6 @@
 Name:		texlive-babel-greek
-Version:	56904
-Release:	2
+Version:	68532
+Release:	1
 Summary:	Babel support for documents written in Greek
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/greek
