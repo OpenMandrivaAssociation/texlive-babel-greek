@@ -3,7 +3,7 @@ Version:	68532
 Release:	1
 Summary:	Babel support for documents written in Greek
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/greek
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/greek
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-greek.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-greek.doc.r%{version}.tar.xz
