@@ -1,46 +1,28 @@
-Name:		texlive-babel-greek
-Version:	68532
-Release:	1
-Summary:	Babel support for documents written in Greek
+%global tl_name babel-greek
+%global tl_revision 78101
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	1.15
+Release:	%{tl_revision}.1
+Summary:	Babel support for the Greek language and script
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/greek
-License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-greek.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-greek.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-greek.source.r%{version}.tar.xz
+License:	lppl1.3
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-greek.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-greek.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-greek.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The file provides modes for monotonic (single-diacritic) and
-polytonic (multiple-diacritic) modes of writing. Provision is
-made for Greek function names in mathematics, and for
-classical-era symbols.
+The bundle provides comprehensive support for the Greek language and
+script via the Babel system. Document authors can select between the
+monotonic (single-diacritic), polytonic (multiple-diacritic), and
+ancient orthography of the Greek language. Included are the packages
+grmath for Greek function names in mathematics, and athnum for Attic
+numerals.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/generic/babel-greek
-%doc %{_texmfdistdir}/doc/generic/babel-greek
-#- source
-%doc %{_texmfdistdir}/source/generic/babel-greek
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
